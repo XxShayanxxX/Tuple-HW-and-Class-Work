@@ -1,4 +1,7 @@
-tuple1 = (100 , 200)
-tuple2 = (299 , 199)
+tuple1 = (2, 3, 4)
+tuple2 = (5, 6, 7)
 
-print(tuple1+tuple2)
+
+result = tuple(tuple1[i] * tuple2[i] for i in range(len(tuple1)))
+
+print(result)
